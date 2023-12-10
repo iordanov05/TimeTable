@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Расписание HSE</title>
+  <script src="/src/js/TimeTable.js"></script>
+  <link rel="stylesheet" href="/src/css/TimeTable.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/src/icons/apple-touch-icon.png?v=7">
+<link rel="icon" type="image/png" sizes="32x32" href="/src/icons/favicon-32x32.png?v=7">
+<link rel="icon" type="image/png" sizes="16x16" href="/src/icons/favicon-16x16.png?v=7">
+<link rel="manifest" href="/src/icons/site.webmanifest?v=7">
+<link rel="mask-icon" href="/src/icons/safari-pinned-tab.svg?v=7" color="#001f99">
+<link rel="shortcut icon" href="/src/icons/favicon.ico?v=7">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/src/icons/mstile-144x144.png?v=7">
+<link rel="mask-icon" href="/src/icons/safari-pinned-tab.svg?v=7" color="#001F99">
+<link rel="apple-touch-icon" sizes="152x152" href="/src/icons/apple-touch-icon-152x152.png?v=7">
+<link rel="apple-touch-icon" sizes="167x167" href="/src/icons/apple-touch-icon-167x167.png?v=7">
+<link rel="apple-touch-icon" sizes="120x120" href="/src/icons/apple-touch-icon-120x120.png?v=7">
+<meta name="theme-color" content="#0F2D69">
+  <link rel="icon" type="image/png" sizes="192x192" href="/src/icons/android-chrome-192x192.png?v=7">
+ <link rel="icon" type="image/png" sizes="512x512" href="/src/icons/android-chrome-512x512.png?v=7">
+</head>
+<body>
+  <header class="header_background">
+      <div class="header_wrapper">
+        <img src="src/icons/01_Logo_HSE_full_rus_CMYK.svg" width="50px" height="50px" alt="">
+        <div class="header_h">
+          <h1 class="h1">Факультет креативных индустрий</h1>
+          <h2 class="h2">Школа дизайна</h2>
+          <h3 class="h2"> Расписание на текущий модуль</h3>
+        </div>
+      </div>
+  </header>
+  <main>
+      <div  class="TimeTable_main">
+        <button id="back" onclick="location.reload()" class="button_data" style="display: none;">
+          <span class="paragraph">Назад</span>
+        </button>
+        <div class="select_wrapper"> 
+          <select id="selectKey" class="select_style custom_select paragraph" style="display: none;"></select>
+          <button id="myButton" onclick="click()" style="display: none;">
+            <span class="paragraph">Нажмите для получения данных</span>
+         </button>
+        </div>
+        <div id="value" class="h1" style="text-align: center;"></div>
+        <div id="info" class="paragraph" style="display: none;" ></div>
+        <div class="loading">
+          <p id="loadingMsg" class="paragraph" style="display: none;">Загрузка...</p>
+        </div>
+      </div> 
+  </main>
+  <footer class="footer_footer">
+      <div class="footer_email_links">
+        <a href="mailto:hse.support@edu.hse.ru" class="h1" style="color: #001F99;" >hse.support@edu.hse.ru</a>
+        <a href="" class="h2" style="color: #BFBFBF; text-decoration: none;" >Техническая поддержка</a>
+      </div>
+      <div class="footer_text">
+        <p class="paragraph" style="color:#BFBFBF">Сделано "Привет, Сири!"</p>
+      </div>
+  </footer>
+</body>
+</html>
